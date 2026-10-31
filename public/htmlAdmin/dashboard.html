@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PrivEdu Admin - Dashboard</title>
+  <link rel="stylesheet" href="../cssAdmin/sidebar.css">
+  <link rel="stylesheet" href="../cssAdmin/dashboard.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  <!-- Sidebar Toggle Checkbox -->
+  <input type="checkbox" id="sidebar-toggle">
+  <label for="sidebar-toggle" class="toggle-btn">
+    <i class="fa-solid fa-bars"></i>
+  </label>
+  <aside class="sidebar">
+    <div class="brand">
+      <span>Siakad Admin</span>
+    </div>
+
+    <ul class="menu">
+      <li class="active"><a href="dashboard.html"><i class="fa-solid fa-gauge"></i> Dashboard</a></li>
+      <li><a href="tugas.html"><i class="fa-solid fa-user-check"></i> Tugas kuliah</a></li>
+      <li><a href="jadwal.html"><i class="fa-solid fa-book-open"></i> Jadwal Kuliah</a></li>
+      <li><a href="materi.html"><i class="fa-solid fa-book-open"></i> Materi Pelajaran</a></li>
+    </ul>
+
+    <div class="sidebar-bottom">
+      <div class="user-box">
+        <div class="avatar">A</div>
+        <div>
+          <p class="username">admin</p>
+          <p class="role">admin</p>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main content -->
+  <div class="content">
+    <header class="content-header">
+      <h1>Dashboard</h1>
+      <p class="sub">Ringkasan aktivitas & metrik penting platform belajar mengaji</p>
+    </header>
+
+    <main class="main-area">
+
+      <!-- Statistik Utama -->
+      <section class="stats">
+        <div class="stats-grid">
+
+          <article class="stat-card">
+            <div class="stat-icon"><i class="fa-solid fa-user-graduate"></i></div>
+            <div class="stat-body">
+              <div class="stat-number">3,842</div>
+              <div class="stat-label">Total Students</div>
+            </div>
+          </article>
+
+          <article class="stat-card">
+            <div class="stat-icon"><i class="fa-solid fa-chalkboard-user"></i></div>
+            <div class="stat-body">
+              <div class="stat-number">412</div>
+              <div class="stat-label">Total Tugas</div>
+            </div>
+          </article>
+
+          <article class="stat-card">
+            <div class="stat-icon"><i class="fa-solid fa-user-clock"></i></div>
+            <div class="stat-body">
+              <div class="stat-number">24</div>
+              <div class="stat-label">Pertemuan terjadwal</div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+    </main>
+  </div>
+
+</body>
+
+</html>
